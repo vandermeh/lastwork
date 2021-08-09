@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 fileData="""<!DOCTYPE html>
 <head>
 <meta charset="utf-8" />
