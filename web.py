@@ -7,29 +7,21 @@ fileData="""<!DOCTYPE html>
 <body>
 <table
 border="1"
-bgcolor="#7FFFD4"
+bgcolor="#A0BEC4"
 cellpadding="10"
 style="width:100%; border-radius:5px;">
-<!--Создаём строку таблицы-->
-<tr>
-<!--Создаём столбец таблицы-->
-<th>
-<!--Содержание ячейки столбца-->
 <h1>Exam</h1>
-<!--Закрываем таблицу-->
-</th>
-</tr>
 </table>
 <table
 border="1"
 bgcolor="#e6e6fa"
 cellpadding="10"
 style="width:100%; border-radius:5px;">
-<!--Создаём строку-->
 <tr>
 <td
-<p style="text-indent:20px">
-time is </p>
+<p style="text-indent:30px">
+this is 
+</p>
 <!--Закрываем ячейку-->
 </td>
 </td>
@@ -46,14 +38,14 @@ f = open('index.html', 'w')
 f.write (fileData)
 f.close()
 
-from datetime import datetime
-current_time = datetime.now().time()
+import os
+info_os = 'lsb_release -d'
 with open("index.html",'r+') as f:
     # Read the file 
     lines=f.readlines()
     for i, line in enumerate(lines):
-        if line.startswith('time is'):
-            lines[i] = lines[i].strip() + str(current_time)
+        if line.startswith('this is '):
+            lines[i] = lines[i].strip() + str(info_os)
     f.seek(0)
     for line in lines:
         f.write(line)
