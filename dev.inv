@@ -1,2 +1,2 @@
 [webservers]
-192.168.0.114 ansible_user=agent
+agent 192.168.0.114 ansible_user=agent
