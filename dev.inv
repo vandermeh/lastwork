@@ -1,2 +1,2 @@
 [webservers]
-agent 192.168.0.114 ansible_user=agent
+agent 192.168.0.114 ansible_user=agent ansible_ssh_private_key_file=/home/examen/.ssh/id_rsa.pub
