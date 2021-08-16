@@ -1,2 +1,0 @@
-[webservers]
-agent 34.94.1.25 ansible_user=agent
