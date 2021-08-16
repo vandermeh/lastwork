@@ -39,7 +39,7 @@ f.write (fileData)
 f.close()
 
 import os
-info_os = 'whaaaassuuuuuppp'
+info_os = `whaaaassuuuuuppp`
 with open("index.html",'r+') as f:
     # Read the file 
     lines=f.readlines()
